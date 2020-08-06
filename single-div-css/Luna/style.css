@@ -1,0 +1,45 @@
+body{
+  background-color: #fadbea;
+  position: relative;
+  height: 100vh;
+}
+
+.luna {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  border: 5px #000 solid;
+  background-color: #36394a;
+}
+
+.luna:before,
+.luna:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+.luna:before {
+  /* box-sizing: border-box;
+  width: 75px;
+  height: 140px;
+  margin-top: -80px;
+  background-color: black;
+  background-image: linear-gradient(to right, #36394a 50%, #36394a 50%),linear-gradient(to right, #36394a 75%, #36394a 75%);
+  border-radius: 100px 100px 0 0;
+  border: 5px solid black;
+  border-bottom-color: transparent;
+  z-index: -1; */
+   width         : 0;
+   height        : 0;
+   margin-top: -80px;
+   transform     : rotate(-14deg);
+   border-left   : 40px solid transparent;
+   border-right  : 40px solid transparent;
+   border-bottom : 75px solid #36394a;
+}
