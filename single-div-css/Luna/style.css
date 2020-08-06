@@ -16,6 +16,8 @@ body{
   border: 5px #000 solid;
   background-color: #36394a;
   /* Nose styles */
+  background-image: -webkit-radial-gradient(circle at bottom, pink 4%, #36394a 2%);
+  background-image: radial-gradient(circle at bottom, pink 4%, #36394a 2%);
   /* Mouth styles */
 }
 
