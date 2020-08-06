@@ -1,39 +1,107 @@
-body{
+body {
   background-color: #fadbea;
   position: relative;
   height: 100vh;
 }
-
-.luna {
+.entry {
   position: absolute;
+  left: 50%;
   top: 50%;
-  left:50%;
-  margin-top: -100px;
-  margin-left: -100px;
-  width: 175px;
-  height: 175px;
-  border-radius: 50%;
-  border: 5px #000 solid;
-  background-color: #36394a;
-  /* Nose styles */
-  background-image: -webkit-radial-gradient(circle at bottom, pink 4%, #36394a 2%);
-  background-image: radial-gradient(circle at bottom, pink 4%, #36394a 2%);
-  /* Mouth styles */
 }
 
-.luna:before,
-.luna:after {
+.entry:before,
+.entry:after {
   display: block;
   content: '';
   position: absolute;
 }
+.entry.luna {
+  width: 175px;
+  height: 175px;
+  margin-top: -100px;
+  margin-left: -100px;
+  border-radius: 50%;
+  border: 5px #000 solid;
+  background-color: #36394a;
+  /* Nose styles */
+  /* background-image: -webkit-radial-gradient(circle at bottom, pink 4%, #36394a 2%);
+  background-image: radial-gradient(circle at bottom, pink 4%, #36394a 2%); */
+  /* Left Eye styles */
+  background-image:
+  radial-gradient(ellipse, rgba(0,0,0,0.4) 50%, transparent 50%),
+  radial-gradient(ellipse, rgba(0,0,0,0.4) 50%, transparent 50%),
+  radial-gradient(ellipse, #fadbea 50%, transparent 50%),
+  radial-gradient(circle, white 50%, transparent 50%),
 
-.luna:before {
+  radial-gradient(circle, #444 50%, transparent 50%),
+  radial-gradient(circle, #e06218 30%, rgba(147,112,219,0) 70%),
+  radial-gradient(circle, #444 50%, transparent 50%),
+  radial-gradient(ellipse, white 30%, #ddd 60%, transparent 60%),
+  radial-gradient(ellipse, #333 45%, #36394a 55%, #36394a 60%, transparent 60%),
+  radial-gradient(circle, white 50%, transparent 50%),
+  radial-gradient(circle, #444 50%, transparent 50%),
+  radial-gradient(circle, #e06218 20%, rgba(147,112,219,0) 70%),
+  radial-gradient(circle, #444 50%, transparent 50%),
+  radial-gradient(ellipse, white 30%, #ddd 60%, transparent 60%),
+  radial-gradient(ellipse, #333 45%, #36394a 55%, #36394a 60%, transparent 60%),
+  radial-gradient(ellipse, #36394a 40%, rgba(0,206,209,0) 50%),
+  radial-gradient(ellipse, #36394a 40%, rgba(0,206,209,0) 50%),
+  radial-gradient(ellipse, #36394a 30%, rgba(147,112,219,0) 60%),
+  radial-gradient(ellipse, #36394a 30%, rgba(147,112,219,0) 60%),
+  radial-gradient(circle, rgba(0,206,209,0) 35%, #36394a 65%);
+  background-repeat: no-repeat;
+  background-size: 20px 10px,
+  20px 10px,
+  75px 40px,
+  5px 5px,
+  13px 13px,
+  19px 19px,
+  34px 34px,
+  50px 45px,
+  54px 58px,
+  5px 5px,
+  13px 13px,
+  19px 19px,
+  34px 34px,
+  50px 45px,
+  54px 58px,
+  100px 40px,
+  170px 90px,
+  45px 40px,
+  45px 40px,
+  220px 350px;
+
+  background-position: 70px 118px,
+  90px 118px,
+  center 95px,
+  68px 70px,
+  60px 71px,
+  58px 68px,
+  50px 60px,
+  40px 55px,
+  38px 47px,
+  114px 70px,
+  106px 71px,
+  102px 68px,
+  95px 60px,
+  90px 55px,
+  88px 47px,
+  center 90px,
+  center 30px,
+  50px -17px,
+  95px 10px,
+  0 -80px;
+
+  border-radius: 50% 50% 50% 50%/60% 60% 30% 30%;
+
+}
+
+.entry.luna:before {
   box-sizing: border-box;
   width: 75px;
   height: 130px;
   margin-top: -70px;
-  background-color: black;
+  background-color: #36394a;
   background-image: radial-gradient(ellipse, #e88c75 43%, #36394a 85%);
   border-radius: 100px 100px 0 0;
   border: 5px solid black;
@@ -41,7 +109,10 @@ body{
   z-index: -1;
 
    /* Left Ear styles */
-   /* Left Eye styles */
+
+
+
+   /* box-shadow: 0 0 20px #009c9e, 0 10px 10px #008384, inset 0 -15px 0 13px rgba(0,0,0,0.03); */
 }
 
 .luna:after{
