@@ -43,38 +43,39 @@ body{
 
 .ears {
   background-color: #e88c75;
-  border-radius: 1000px 30px 1000px 30px;
+  border-radius: 1000px 30px 1000px 170px;
   height: 100px;
   position: absolute;
-  top: -30px;
+  top: -38px;
   width: 125px;
   z-index: -1;
 }
 
 .ears.left {
-  border-bottom: 20px solid #36394a;
-  border-left: 7px solid #36394a;
-  border-right: 20px solid #36394a;
-  border-top: 7px solid #36394a;
-  left: -45px;
+  border-bottom: 25px solid #36394a;
+  border-left: 1px solid #36394a;
+  border-right: 4px solid #36394a;
+  border-top: 3px solid #36394a;
+  left: -26px;
   -webkit-transform: rotate(-85deg);
   -moz-transform: rotate(-85deg);
   -o-transform: rotate(-85deg);
   -ms-transform: rotate(-85deg);
-  transform: rotate(-85deg);
+  transform: rotate(-65deg);
 
 }
 .ears.right {
-  border-bottom: 7px solid #36394a;
-  border-left: 20px solid #36394a;
-  border-right: 7px solid #36394a;
-  border-top: 20px solid #36394a;
-  right: 30px;
-  -webkit-transform: rotate(-20deg);
-  -moz-transform: rotate(-20deg);
-  -o-transform: rotate(-20deg);
-  -ms-transform: rotate(-20deg);
-  transform: rotate(-20deg);
+  border-bottom: 25px solid #36394a;
+  border-left: 1px solid #36394a;
+  border-right: 4px solid #36394a;
+  border-top: 3px solid #36394a;
+  right: 50px;
+  -webkit-transform: rotate(109deg);
+  -moz-transform: rotate(109deg);
+  -o-transform: rotate(109deg);
+  -ms-transform: rotate(109deg);
+  transform: rotate(109deg);
+  transform: scaleY(-1) rotate(109deg);
 
 }
 
