@@ -10,6 +10,21 @@ body{
   top: 50%;
 }
 
+.container-wrapper{
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1px;
+  grid-auto-rows: minmax(50px, auto); */
+}
+
+.head-wrapper {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1px;
+  grid-auto-rows: minmax(50px, auto); */
+}
+
 .ear{
   display: inline;
   width: 0;
@@ -19,8 +34,55 @@ body{
   border-bottom: 55px solid #36394a;
 }
 
+.ear-wrapper {
+  border-radius: 250px;
+  height: 262.5px;
+  position: absolute;
+  width: 250px;
+}
+
+.ears {
+  background-color: #e88c75;
+  border-radius: 1000px 30px 1000px 30px;
+  height: 100px;
+  position: absolute;
+  top: -30px;
+  width: 125px;
+  z-index: -1;
+}
+
+.ears.left {
+  border-bottom: 20px solid #36394a;
+  border-left: 7px solid #36394a;
+  border-right: 20px solid #36394a;
+  border-top: 7px solid #36394a;
+  left: -45px;
+  -webkit-transform: rotate(-85deg);
+  -moz-transform: rotate(-85deg);
+  -o-transform: rotate(-85deg);
+  -ms-transform: rotate(-85deg);
+  transform: rotate(-85deg);
+
+}
+.ears.right {
+  border-bottom: 7px solid #36394a;
+  border-left: 20px solid #36394a;
+  border-right: 7px solid #36394a;
+  border-top: 20px solid #36394a;
+  right: 30px;
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+
+}
+
 .left-ear{
   background-color: #36394a;
+  /* grid-column: 5 / 6;
+  grid-row: 1 / 4; */
+  z-index: 2;
 }
 
 .right-ear{
@@ -48,11 +110,11 @@ body{
 }
 
 .left-eye{
-
+  z-index: 2;
 }
 
 .right-eye{
-
+  z-index: 2;
 }
 
 .cornia{
@@ -61,6 +123,7 @@ body{
   height: 60px;
   background-color: #e06218;
   border-radius: 50%;
+  z-index: 3;
 }
 
 .pupil{
