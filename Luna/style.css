@@ -1,0 +1,78 @@
+body{
+  background-color: #fadbea;
+  position: relative;
+  height: 100vh;
+}
+
+.container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.ear{
+  display: inline;
+  width: 0;
+  height: 0;
+  border-left: 55px solid transparent;
+  border-right: 22.5px solid transparent;
+  border-bottom: 55px solid #36394a;
+}
+
+.left-ear{
+  background-color: #36394a;
+}
+
+.right-ear{
+  background-color: #36394a;
+}
+
+.head{
+  height:175px;
+  width: 175px;
+  background-color: #36394a;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.face{
+  z-index: 2;
+}
+
+.eye{
+  display: inline;
+  width: 50px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fefefe;
+}
+
+.left-eye{
+
+}
+
+.right-eye{
+
+}
+
+.cornia{
+  display: inline;
+  width: 40px;
+  height: 60px;
+  background-color: #e06218;
+  border-radius: 50%;
+}
+
+.pupil{
+
+}
+
+.nose{
+
+}
+.whiskers{
+
+}
+.mouth{
+
+}
