@@ -11,10 +11,14 @@ body{
 }
 
 .container-wrapper{
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1px;
-  grid-auto-rows: minmax(50px, auto); */
+  bottom: 0;
+  height: 30%;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 15%;
 }
 
 .head-wrapper {
@@ -56,7 +60,7 @@ body{
   border-left: 1px solid #36394a;
   border-right: 4px solid #36394a;
   border-top: 3px solid #36394a;
-  left: -26px;
+  left: -30px;
   -webkit-transform: rotate(-85deg);
   -moz-transform: rotate(-85deg);
   -o-transform: rotate(-85deg);
@@ -69,14 +73,13 @@ body{
   border-left: 1px solid #36394a;
   border-right: 4px solid #36394a;
   border-top: 3px solid #36394a;
-  right: 50px;
+  right: 42px;
   -webkit-transform: rotate(109deg);
   -moz-transform: rotate(109deg);
   -o-transform: rotate(109deg);
   -ms-transform: rotate(109deg);
   transform: rotate(109deg);
   transform: scaleY(-1) rotate(109deg);
-
 }
 
 .left-ear{
@@ -108,6 +111,7 @@ body{
   height: 70px;
   border-radius: 50%;
   background-color: #fefefe;
+  border: 2px #000 solid;
 }
 
 .left-eye{
@@ -131,6 +135,48 @@ body{
 
 }
 
+/* Not my styles */
+.eyes {
+  height: 60px;
+  width: 45px;
+  background-color: #ddd;
+  position: absolute;
+  top: 65px;
+  z-index: 2;
+}
+.eyes.left {
+  border-radius: 100% 100% 90% 75%;
+  left: 30px;
+}
+.eyes.right {
+  border-radius: 100% 100% 75% 90%;
+  right: 30px;
+}
+
+.eyes .eye-color {
+  height: 50px;
+  width: 25px;
+  background-color: #ef6206;
+  border-radius: 100%;
+  position: relative;
+  top: 3px;
+  z-index: 3;
+}
+.eyes.eye-color.left {
+  left: 36px;
+}
+/* .eyes .eye-color.left:after {
+  right: 2px;
+} */
+.eyes .eye-color.left:before {
+  left: 11px;
+  -webkit-transform: rotate(50deg);
+  -moz-transform: rotate(50deg);
+  -o-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  transform: rotate(50deg);
+}
+
 .nose{
 
 }
@@ -139,4 +185,27 @@ body{
 }
 .mouth{
 
+}
+.cresent-moon{
+  background-color: #f5e52e;
+ border-radius: 100%;
+ height: 40px;
+ left: 0;
+ margin: auto;
+ position: absolute;
+ right: 0;
+ top: 20px;
+ width: 40px;
+}
+
+.cresent-moon:after{
+  background-color: #36394a;
+  border-radius: 100%;
+  content: "";
+  display: block;
+  height: 32px;
+  left: 4px;
+  position: absolute;
+  top: -4px;
+  width: 32px;
 }
