@@ -10,48 +10,31 @@ body{
   top: 50%;
 }
 
-.container-wrapper{
-  bottom: 0;
+.wrapper{
   height: 30%;
-  left: 0;
+  width: 15%;
   margin: auto;
   position: absolute;
+  bottom: 0;
+  left: 0;
   right: 0;
   top: 0;
-  width: 15%;
-}
-
-.head-wrapper {
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 1px;
-  grid-auto-rows: minmax(50px, auto); */
-}
-
-.ear{
-  display: inline;
-  width: 0;
-  height: 0;
-  border-left: 55px solid transparent;
-  border-right: 22.5px solid transparent;
-  border-bottom: 55px solid #36394a;
 }
 
 .ear-wrapper {
-  border-radius: 250px;
-  height: 262.5px;
-  position: absolute;
   width: 250px;
+  height: 262.5px;
+  border-radius: 250px;
+  position: absolute;
 }
 
 .ears {
+  height: 100px;
+  width: 125px;
   background-color: #e88c75;
   border-radius: 1000px 30px 1000px 170px;
-  height: 100px;
   position: absolute;
   top: -38px;
-  width: 125px;
   z-index: -1;
 }
 
@@ -164,12 +147,7 @@ body{
   top: 122px;
   left: 80px;
 }
-.whiskers{
 
-}
-.mouth{
-
-}
 .cresent-moon{
  width: 37px;
  height: 37px;
@@ -192,5 +170,82 @@ body{
   left: 4px;
   position: absolute;
   top: -4px;
+
+}
+
+.whiskers{
+  background-color: #261f2e;
+  height: 1.75px;
+  width: 90px;
+  position: absolute;
+  top: 125px;
+  z-index: 3;
+  opacity: 0.5;
+}
+
+.whiskers.left {
+  left: -45px;
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+}
+.whiskers.left:after, .left.whiskers:before {
+  left: 1px;
+  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+}
+.whiskers.left:before {
+  left: 5px;
+  transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+}
+.whiskers.right {
+  right: -45px;
+  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+}
+.whiskers.right:after, .right.whiskers:before {
+  right: 1px;
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+}
+.whiskers.right:before {
+  right: 5px;
+  transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+}
+
+.whiskers:after, .whiskers:before {
+  height: 1.75px;
+  width: 90px;
+  background-color: #261f2e;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20px;
+}
+
+.whiskers:before {
+  top: 40px;
+  width: 90px;
+}
+.mouth{
 
 }
