@@ -114,36 +114,7 @@ body{
   border: 2px #000 solid;
 }
 
-.left-eye{
-  z-index: 2;
-}
 
-.right-eye{
-  z-index: 2;
-}
-
-.cornia{
-  display: inline;
-  width: 40px;
-  height: 60px;
-  background-color: #e06218;
-  border-radius: 50%;
-  z-index: 3;
-}
-
-.pupil{
-
-}
-
-/* Not my styles */
-.eyes {
-  height: 60px;
-  width: 45px;
-  background-color: #ddd;
-  position: absolute;
-  top: 65px;
-  z-index: 2;
-}
 .eyes.left {
   border-radius: 100% 100% 90% 75%;
   left: 30px;
@@ -162,14 +133,13 @@ body{
   top: 3px;
   z-index: 3;
 }
-.eyes.eye-color.left {
-  left: 36px;
+
+.left.eyes.eye-color{
+  left: 10px;
 }
-/* .eyes .eye-color.left:after {
-  right: 2px;
-} */
+
 .eyes .eye-color.left:before {
-  left: 11px;
+  left: 20px;
   -webkit-transform: rotate(50deg);
   -moz-transform: rotate(50deg);
   -o-transform: rotate(50deg);
@@ -187,25 +157,26 @@ body{
 
 }
 .cresent-moon{
-  background-color: #f5e52e;
+ width: 37px;
+ height: 37px;
+ background-color: #f5e52e;
  border-radius: 100%;
- height: 40px;
  left: 0;
  margin: auto;
  position: absolute;
  right: 0;
  top: 20px;
- width: 40px;
 }
 
 .cresent-moon:after{
+  width: 29px;
+  height: 29px;
   background-color: #36394a;
   border-radius: 100%;
   content: "";
   display: block;
-  height: 32px;
   left: 4px;
   position: absolute;
   top: -4px;
-  width: 32px;
+
 }
