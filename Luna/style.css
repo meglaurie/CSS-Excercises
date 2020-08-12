@@ -8,6 +8,8 @@ body{
   position: absolute;
   left: 50%;
   top: 50%;
+  min-width: 170px;
+  max-width: 170px;
 }
 
 .wrapper{
