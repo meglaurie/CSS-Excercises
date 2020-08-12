@@ -3,6 +3,14 @@ body{
   font-family: 'Amatic SC', cursive;
 }
 
+h1{
+  margin: 0px;
+}
+
+.container{
+  margin-top: 15%;
+}
+
 .glow {
   font-size: 80px;
   color: #fff;
@@ -10,6 +18,19 @@ body{
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
+}
+
+.flicker{
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: flicker .3s linear infinite;
+  -moz-animation: flicker .3s linear infinite;
+  animation: flicker .3s linear infinite;
+}
+
+.right{
+  margin-left: 100px;
 }
 
 @-webkit-keyframes glow {
@@ -33,4 +54,23 @@ body{
     0 0 70px #ff4da6,
     0 0 80px #ff4da6;
   }
+}
+
+@-webkit-keyframes flicker {
+  0%, 10%, 21%, 31%, 51%, 61%, 81%, 100% {
+
+        text-shadow:
+        0 0 20px #fff,
+        0 0 30px #ff4da6,
+        0 0 40px #ff4da6,
+        0 0 50px #ff4da6,
+        0 0 60px #ff4da6,
+        0 0 70px #ff4da6,
+        0 0 80px #ff4da6;
+    }
+
+    11%, 41%, 71%, 91% {
+        text-shadow: none;
+        opacity: 0;
+    }
 }
