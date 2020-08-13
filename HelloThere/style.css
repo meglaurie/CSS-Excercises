@@ -5,10 +5,11 @@ body{
 
 h1{
   margin: 0px;
+  margin-bottom: -20px;
 }
 
 .container{
-  margin-top: 15%;
+  margin-top: 5%;
 }
 
 .glow {
@@ -57,7 +58,7 @@ h1{
 }
 
 @-webkit-keyframes flicker {
-  0%, 10%, 21%, 31%, 51%, 61%, 81%, 100% {
+  0%, 21%, 51%, 81%, 100% {
 
         text-shadow:
         0 0 20px #fff,
@@ -69,7 +70,7 @@ h1{
         0 0 80px #ff4da6;
     }
 
-    11%, 41%, 71%, 91% {
+    22%, 52%, 82%, 91% {
         text-shadow: none;
         opacity: 0;
     }
