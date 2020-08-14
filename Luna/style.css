@@ -307,8 +307,8 @@ body{
   border-radius: 100% 100% 0px 0px /50% 50% 0 0;
   z-index: 2;
   position: relative;
-  top: 112px;
-  left: 81px;
+  top: 133px;
+  left: 80px;
   transform: rotate(180deg);
   border: solid #010d1b .5px;
 }
@@ -316,12 +316,30 @@ body{
 .mouth::before{
   content: "";
   display: inline-block;
-  z-index: 3;
+  width: 15px;
+  height: 10px; /* as the half of the width */
+  background-color: #36394a;
+  border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+  border-top-right-radius: 110px; /* 100px of height + 10px of border */
+  border: solid .5px #010d1b;
+  border-bottom: 0;
   position: relative;
+  top: 7px;
+  left: 4px;
+  z-index: 3;
 }
 .mouth::after{
   content: "";
   display: inline-block;
-  z-index: 3;
+  width: 15px;
+  height: 10px; /* as the half of the width */
+  background-color: #36394a;
+  border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+  border-top-right-radius: 110px; /* 100px of height + 10px of border */
+  border: solid .5px #010d1b;
+  border-bottom: 0;
   position: relative;
+  top: -11px;
+  right: 11px;
+  z-index: 3;
 }
