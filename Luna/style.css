@@ -273,33 +273,7 @@ body{
   width: 90px;
 }
 
-.mouth-container{
 
-}
-.mouth-curve{
-   width: 15px;
-   height: 10px; /* as the half of the width */
-   background-color: #36394a;
-   border-top-left-radius: 110px;  /* 100px of height + 10px of border */
-   border-top-right-radius: 110px; /* 100px of height + 10px of border */
-   border: solid .5px #010d1b;
-   border-bottom: 0;
-   transform: rotate(180deg);
-   position: relative;
-   z-index: 3;
-}
-/* .mouth-curve.right{
-  z-index: 3;
-  position: relative;
-  top: 129px;
-  left: 70px;
-}
-.mouth-curve.left{
-  z-index: 3;
-  position: relative;
-  top: 118px;
-  left: 85px;
-} */
 .mouth{
   background-color: #bb7774;
   width: 10px;
