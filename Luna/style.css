@@ -142,15 +142,25 @@ body{
   top: 3px;
 }
 
-.eye-reflection{
+.eye-white::before{
+  content: "";
+  display: inline-block;
   width:10px;
   height: 10px;
   background-color: #fefefe;
   border: solid .5px #010d1b;
   border-radius: 50%;
   position: relative;
-  top: 3px;
+  top: 30px;
 }
+
+.eye-white.right::before{
+  left: 15px;
+}
+.eye-white.left::before{
+  right: 7px;
+}
+
 
 .nose{
   height: 8px;
@@ -278,7 +288,7 @@ body{
    position: relative;
    z-index: 3;
 }
-.mouth-curve.right{
+/* .mouth-curve.right{
   z-index: 3;
   position: relative;
   top: 129px;
@@ -289,7 +299,7 @@ body{
   position: relative;
   top: 118px;
   left: 85px;
-}
+} */
 .mouth{
   background-color: #bb7774;
   width: 10px;
@@ -301,4 +311,17 @@ body{
   left: 81px;
   transform: rotate(180deg);
   border: solid #010d1b .5px;
+}
+
+.mouth::before{
+  content: "";
+  display: inline-block;
+  z-index: 3;
+  position: relative;
+}
+.mouth::after{
+  content: "";
+  display: inline-block;
+  z-index: 3;
+  position: relative;
 }
