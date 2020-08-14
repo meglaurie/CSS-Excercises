@@ -83,6 +83,7 @@ body{
   width: 175px;
   background-color: #36394a;
   border-radius: 50%;
+  border: solid .5px #010d1b;
   z-index: 1;
 }
 
@@ -93,6 +94,7 @@ body{
   height: 60px;
   width: 45px;
   background-color: #fefefe;
+  border: solid .5px #010d1b;
   position: absolute;
   top: 65px;
   z-index: 2;
@@ -110,6 +112,7 @@ body{
   height: 50px;
   width: 35px;
   background-color: #ef6206;
+  border: solid .5px #010d1b;
   border-radius: 100%;
   position: relative;
   top: 3px;
@@ -133,6 +136,17 @@ body{
   width:20px;
   height: 35px;
   background-color: #fefefe;
+  border: solid .5px #010d1b;
+  border-radius: 50%;
+  position: relative;
+  top: 3px;
+}
+
+.eye-reflection{
+  width:10px;
+  height: 10px;
+  background-color: #fefefe;
+  border: solid .5px #010d1b;
   border-radius: 50%;
   position: relative;
   top: 3px;
@@ -142,7 +156,7 @@ body{
   height: 8px;
   width: 10px;
   background-color: #e98970;
-  border: 1px solid #000;
+  border:solid .5px #000;
   border-radius: 50%;
   position: relative;
   z-index: 2;
@@ -176,7 +190,7 @@ body{
 }
 
 .whiskers{
-  background-color: #261f2e;
+  background-color: #010d1b;
   height: 1.75px;
   width: 90px;
   position: absolute;
@@ -237,7 +251,7 @@ body{
 .whiskers:after, .whiskers:before {
   height: 1.75px;
   width: 90px;
-  background-color: #261f2e;
+  background-color: #010d1b;
   content: "";
   display: block;
   position: absolute;
@@ -248,6 +262,43 @@ body{
   top: 40px;
   width: 90px;
 }
-.mouth{
 
+.mouth-container{
+
+}
+.mouth-curve{
+   width: 15px;
+   height: 10px; /* as the half of the width */
+   background-color: #36394a;
+   border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+   border-top-right-radius: 110px; /* 100px of height + 10px of border */
+   border: solid .5px #010d1b;
+   border-bottom: 0;
+   transform: rotate(180deg);
+   position: relative;
+   z-index: 3;
+}
+.mouth-curve.right{
+  z-index: 3;
+  position: relative;
+  top: 129px;
+  left: 70px;
+}
+.mouth-curve.left{
+  z-index: 3;
+  position: relative;
+  top: 118px;
+  left: 85px;
+}
+.mouth{
+  background-color: #bb7774;
+  width: 10px;
+  height: 16px;
+  border-radius: 100% 100% 0px 0px /50% 50% 0 0;
+  z-index: 2;
+  position: relative;
+  top: 112px;
+  left: 81px;
+  transform: rotate(180deg);
+  border: solid #010d1b .5px;
 }
