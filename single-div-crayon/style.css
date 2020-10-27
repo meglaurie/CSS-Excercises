@@ -1,0 +1,75 @@
+body{
+  background:#ed9940;
+  float: left;
+  width: 50%;
+  text-align: center;
+  min-height: 400px;
+  position: relative;
+
+}
+
+div{
+  width: 250px;
+  height: 40px;
+  margin-left: 75%;
+  margin-top: 10%;
+  z-index: 1;
+  background: #ff008c;
+  background-image: linear-gradient(to bottom,
+                                  transparent 62%,
+                                  rgba(0, 0, 0,.4) 100%),
+                                  linear-gradient(to right,
+                                  transparent 12px,
+                                  rgba(255, 179, 221,.6) 12px,
+                                  rgba(255, 179, 221,.6) 235px,
+                                  transparent 235px),
+                                  linear-gradient(to right,
+                                  transparent 25px,
+                                  rgba(66, 3, 38, .9) 25px,
+                                  rgba(66, 3, 38, 1) 30px,
+                                  transparent 30px,
+                                  transparent 35px,
+                                  rgba(0, 0, 0,.6) 35px,
+                                  rgba(0, 0, 0,.6) 40px,
+                                  transparent 40px,
+                                  transparent 210px,
+                                  rgba(0, 0, 0,.6) 210px,
+                                  rgba(0, 0, 0,.6) 215px,
+                                  transparent 215px,
+                                  transparent 220px,
+                                  rgba(0, 0, 0,.6) 220px,
+                                  rgba(0, 0, 0,.6) 225px,
+                                  transparent 225px);
+
+/* background-image: radial-gradient(ellipse at top,
+  rgba(0,0,0,0.6) 50px,
+  transparent 54px),
+  linear-gradient(to right,
+  transparent 25px,
+  rgba(0,0,0,0.6) 25px,
+  rgba(0,0,0,0.6) 30px,
+  transparent 30px,
+  transparent 35px,
+  rgba(0,0,0,0.6) 35px,
+  rgba(0,0,0,0.6) 40px,
+  transparent 40px,
+  transparent 210px,
+  rgba(0,0,0,0.6) 210px,
+  rgba(0,0,0,0.6) 215px,
+  transparent 215px,
+  transparent 220px,
+  rgba(0,0,0,0.6) 220px,
+  rgba(0,0,0,0.6) 225px,
+  transparent 225px),
+  linear-gradient(to right,
+    transparent 12px,
+    rgba(41,237,133,0.6) 12px,
+    rgba(41,237,133,0.6) 235px,
+    transparent 235px),
+  linear-gradient(to bottom,
+  transparent 62%,
+  rgba(0,0,0,0.3) 100%);
+
+
+  box-shadow: 2px 2px 3px #636163;
+} */
