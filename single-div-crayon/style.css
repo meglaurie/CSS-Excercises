@@ -1,7 +1,7 @@
 body{
   background:#ed9940;
   float: left;
-  width: 50%;
+  width: 100%;
   text-align: center;
   min-height: 400px;
   position: relative;
@@ -16,32 +16,40 @@ div:before {
   border-top: 9px solid transparent;
   z-index: 0;
   position: relative;
-  right: 114px;
+  right: 150px;
   top: 12px;
 }
 
 div::after {
-  content: 'pink';
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  color: rgba(0, 0, 0,.5);
-  text-align: right;
-  padding-right: 47px;
-  padding-top: 17px;
-  background-image: linear-gradient(to bottom,
-                                    rgba(255, 255, 255,.2) 12px,
-                                    rgba(255, 255, 255,.2) 17px,
-                                    rgba(255, 255, 255,.2) 19px,
-                                    rgba(255, 255, 255,.2) 24px);
+ content: 'pink';
+ box-sizing: inherit;
+ border: inherit;
+ width: 250px;
+ height: 40px;
+ position: absolute;
+ margin-left: -80%;
+ margin-top: -3px;
+ font-family: Arial, sans-serif;
+ font-size: 12px;
+ font-weight: bold;
+ color: rgba(0, 0, 0,.5);
+ text-align: right;
+ padding-right: 47px;
+ padding-top: 28px;
+ background-image: linear-gradient(to bottom,
+                                   rgba(255, 255, 255,.0) 12px,
+                                   rgba(255, 255, 255,.3) 24px,
+                                   rgba(255, 255, 255,.3) 19px,
+                                   rgba(255, 255, 255,.0) 24px);
 }
 
 div{
   width: 250px;
   height: 40px;
-  margin-left: 75%;
+  margin-left: 45%;
   margin-top: 10%;
   z-index: 1;
+  position: absolute;
   box-shadow: 2px 2px 3px rgba(0,0,0,.3);
   background: #ff008c;
   background-image: linear-gradient(to right,
