@@ -1,0 +1,11 @@
+div{
+  background: -webkit-gradient(linear,left top, right top,from(#111),color-stop(15%, #444),color-stop(85%, #444),to(#111));
+    background: linear-gradient(to right,#111 0%,#444 15%,#444 85%,#111 100%);
+    border-top: 15px solid #ccc;
+    border-bottom: 12px solid #ccc;
+    -o-border-image: linear-gradient(to right,#444,#ccc,#ccc,#ccc,#ccc,#444) 1% stretch;
+    border-image: -webkit-gradient(linear,left top, right top,from(#444),color-stop(#ccc),color-stop(#ccc),color-stop(#ccc),color-stop(#ccc),to(#444)) 1% stretch;
+    border-image: linear-gradient(to right,#444,#ccc,#ccc,#ccc,#ccc,#444) 1% stretch;
+    -webkit-box-shadow: 0 3px 4px -2px rgba(0,0,0,0.6), 0 10px 7px -2px rgba(0,0,0,0.4);
+    box-shadow: 0 3px 4px -2px rgba(0,0,0,0.6), 0 10px 7px -2px rgba(0,
+}
