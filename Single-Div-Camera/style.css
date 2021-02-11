@@ -25,36 +25,19 @@ div::before {
     left: 50%;
     z-index: 2;
     background:#333;
-    -webkit-box-shadow: 0 0 0 2px #eee,
-                -1px -1px 1px 3px #333,
-                -95px 6px 0 0 #ccc,
-                30px 3px 0 12px #ccc,
-                -18px 37px 0 46px #ccc,
-
-                -96px -6px 0 -6px #555,
-                -96px -9px 0 -6px #ddd,
-
-                -155px -10px 1px 3px #888,
-                -165px -10px 1px 3px #999,
-                -170px -10px 1px 3px #666,
-                -162px -8px 0 5px #555,
-               
-                85px -4px 1px -3px #ccc,
-                79px -4px 1px -3px #888,
-                82px 1px 0 -4px #555;
-    box-shadow: 0 0 0 2px #eee, /* white line */
-                -1px -1px 1px 3px #333, /* dark line behind white line */
+    box-shadow: 120px 0 0 2px #eee, /* white line */
+                120px -1px 1px 6px #333, /* dark line behind white line */
                 -95px 6px 0 0 #ccc, /* ??? */
-                30px 3px 0 12px #ccc, /* small grey box off to side */
-                -18px 37px 0 46px #ccc, /* large grey box off to side */
+                190px -13px 0 22px #ccc, /* small grey box off to side */
+                120px 17px 0 52px #ccc, /* large grey box off to side */
 
                 -96px -6px 0 -6px #555, /* ??? */
                 -96px -9px 0 -6px #ddd, /* ??? */
 
-                -155px -10px 1px 3px #888, /* right side of knob */
-                -165px -10px 1px 3px #999, /* grey line in center of knob */
-                -170px -10px 1px 3px #666, /* left side of knob */
-                -162px -8px 0 5px #555, /* base and background of knob */
+                -5px -40px 1px 3px #888, /* right side of knob */
+                -15px -40px 1px 3px #999, /* grey line in center of knob */
+                -20px -40px 1px 3px #666, /* left side of knob */
+                -12px -38px 0 5px #555, /* base and background of knob */
 
                 85px -4px 1px -3px #ccc, /* ??? */
                 79px -4px 1px -3px #888, /* ??? */
