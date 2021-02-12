@@ -25,27 +25,34 @@ div::before {
     left: 50%;
     z-index: 2;
     background:#333;
-    box-shadow: 145px -15px 0 2px #eee, /* white line */
-                145px -15px 1px 6px #333, /* dark line behind white line */
-                55px -30px 0 0 #ccc, /* Grey Knob */
-                180px -13px 0 17px #ccc, /* small grey box off to side */
-                130px 17px 0 47px #ccc, /* large grey box off to side */
+    box-shadow: 145px -30px 0 2px #333, 
+                145px -30px 1px 6px #eee, 
+                50px -30px 0 0 #ccc, 
+                180px -23px 0 17px #ccc, 
+                130px 7px 0 47px #ccc, 
 
-                55px -42px 0 -6px #555, /* line on top of grey knob */
-                55px -45px 0 -6px #ddd, /*  line on top of grey knob */
+                50px -42px 0 -6px #555, 
+                50px -45px 0 -6px #ddd, 
 
-                -5px -40px 1px 3px #888, /* right side of knob */
-                -15px -40px 1px 3px #999, /* grey line in center of knob */
-                -20px -40px 1px 3px #666, /* left side of knob */
-                -12px -38px 0 5px #555, /* base and background of knob */
+                -5px -40px 1px 3px #888, 
+                -15px -40px 1px 3px #999, 
+                -20px -40px 1px 3px #666, 
+                -12px -38px 0 5px #555, 
 
-                250px -35px 1px -3px #ccc, /* right knob*/
-                244px -35px 1px -3px #888, /* right knob */
-                247px -29px 0 -4px #555; /* right knob */
+                250px -35px 1px -3px #ccc, 
+                244px -35px 1px -3px #888, 
+                247px -29px 0 -4px #555; 
 }
 
 
 div:after {
+    width: 100px;
+    height: 100px;
+    margin-left: 130px;
+    margin-top: -2px;
+    top: 90px;
+    left: 27%;
+    z-index: 3;
     background: linear-gradient(45deg, #ccc 40%, #ddd 100%);
     border-radius: 50%;
     box-shadow: 0 3px 2px #999,
@@ -80,6 +87,7 @@ div:after {
                 12px -84px 1px -48px #999,
                 23px -85px 0 -47px #444,
                 23px -87px 0 -46px #888;
+    
 }
 
 
@@ -89,5 +97,6 @@ div:before, div:after {
 }
 
 div::after{
-    position: absolute;
+  
+    display: block;
 }
